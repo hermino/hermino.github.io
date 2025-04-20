@@ -1,0 +1,57 @@
+header {
+    width: 100vw;
+    background-color: var(--petroleum-blue);
+    display: flex;
+    padding: 0 15vw;
+    box-sizing: border-box;
+}
+
+header .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: var(--width-half);
+    padding: 10vh 0;
+    gap: var(--gap-default);
+}
+
+header .header-content div h1 {
+    color: var(--ice-white);
+    font-size: var(--font-large);
+    font-weight: 600;
+    font-family: var(--font-primary);
+}
+
+header .header-content div h2 {
+    color: var(--aqua-green);
+    font-size: var(--font-medium);
+    font-weight: 400;
+    font-family: var(--font-primary);
+}
+
+header .header-content p {
+    color: var(--ice-white);
+    font-size: var(--font-small);
+    font-weight: 300;
+    font-family: var(--font-secondary);
+    text-align: justify;
+}
+
+header .header-content button {
+    background-color: var(--aqua-green);
+    color: var(--ice-white);
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: var(--font-primary);
+    padding: var(--padding-default);
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+}
+
+header .header-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: var(--width-half);
+}

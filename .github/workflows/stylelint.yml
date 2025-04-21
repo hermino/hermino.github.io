@@ -5,17 +5,15 @@ on:
     branches: [master]
 
 jobs:
-  stylelint:
+  lint-css:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-
-      - name: Install stylelint
+      - name: Instalar dependências do Stylelint
         run: |
           npm install stylelint stylelint-config-standard --save-dev
           npx stylelint "**/*.css"

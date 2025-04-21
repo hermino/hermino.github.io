@@ -41,7 +41,6 @@
     content: '';
     position: absolute;
     left: -1.25rem;
-    top: 0.0rem;
     width: 10px;
     height: 10px;
     background-color: var(--aqua-green);

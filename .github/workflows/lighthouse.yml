@@ -8,17 +8,12 @@ jobs:
   lighthouse:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-
-      - name: Install Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-
-      - name: Install Lighthouse CI
+      - name: Instalar Lighthouse CI
         run: npm install -g @lhci/cli
-
-      - name: Run Lighthouse CI
+      - name: Rodar Lighthouse na URL pública
         run: |
-          lhci autorun --upload.target=temporary-public-storage
+          lhci collect --url=https://hermino.github.io --upload.target=temporary-public-storage

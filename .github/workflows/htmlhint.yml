@@ -2,7 +2,7 @@ name: HTMLHint
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
   htmlhint:

@@ -1,6 +1,7 @@
 @import url('about.css');
 @import url('contacts.css');
 @import url('experiences.css');
+@import url('footer.css');
 @import url('header.css');
 @import url('projects.css');
 @import url('skills.css');
@@ -51,6 +52,19 @@ main {
 main section {
     width: var(--width-half);
     padding: 10vh 0;
+}
+
+@media screen and (max-width: 960px) {
+    main {
+        flex-direction: column;
+        padding: 0 5vw;
+    }
+
+    main section {
+        width: 100%;
+        padding: 5vh 0;
+    }
+    
 }
 
 h2 {

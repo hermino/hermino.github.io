@@ -14,6 +14,18 @@ header .header-content {
     gap: var(--gap-default);
 }
 
+@media screen and (max-width: 960px) {
+    header {
+        padding: 0 5vw;
+    }
+
+    header .header-content {
+        width: 100%;
+        padding: 5vh 0;
+    }
+    
+}
+
 header .header-content div h1 {
     color: var(--ice-white);
     font-size: var(--font-large);

@@ -54,7 +54,7 @@ main section {
     padding: 10vh 0;
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
     main {
         flex-direction: column;
         padding: 0 5vw;

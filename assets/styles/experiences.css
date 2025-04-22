@@ -41,6 +41,12 @@
     font-family: var(--font-mono);
 }
 
+.experiences .experience .experience-info div span:hover {
+    background-color: var(--light-gray);
+    transition: background-color 0.3s ease;
+    color: var(--soft-black);
+}
+
 .experiences .experience .description {
     margin-top: 10px;
     display: flex;
@@ -85,4 +91,10 @@
     font-family: var(--font-mono);
     font-size: var(--font-smaller);
     color: var(--soft-black);
+}
+
+.experiences .experience .technologies label:hover {
+    background-color: var(--aqua-green);
+    transition: background-color 0.3s ease;
+    color: var(--ice-white);
 }

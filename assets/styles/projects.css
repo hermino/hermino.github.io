@@ -36,6 +36,12 @@
     font-family: var(--font-mono);
 }
 
+.projects .project div .business:hover {
+    background-color: var(--light-gray);
+    transition: background-color 0.3s ease;
+    color: var(--soft-black);
+}
+
 .projects .project p {
     font-weight: 300;
     font-family: var(--font-secondary);
@@ -57,4 +63,10 @@
     font-size: var(--font-smaller);
     font-weight: 300;
     font-family: var(--font-mono);
+}
+
+.projects .project div label:hover {
+    background-color: var(--aqua-green);
+    transition: background-color 0.3s ease;
+    color: var(--ice-white);
 }

@@ -48,6 +48,13 @@ header .header-content button {
     cursor: pointer;
 }
 
+header .header-content button:hover {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    border: 1px solid var(--aqua-green);
+}
+
+
 header .header-image {
     display: flex;
     justify-content: center;

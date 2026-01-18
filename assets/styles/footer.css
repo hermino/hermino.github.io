@@ -1,10 +1,10 @@
 footer {
     width: 100%;
-    padding: 4px 0;
-    background-color: var(--petroleum-blue);
-    color: var(--ice-white);
+    padding: var(--space-lg) 0;
+    background-color: var(--color-primary-dark);
+    color: var(--color-neutral-50);
     text-align: center;
     font-family: var(--font-secondary);
-    font-size: var(--font-small);
-    font-weight: 300;
+    font-size: var(--text-sm);
+    font-weight: var(--weight-light);
 }

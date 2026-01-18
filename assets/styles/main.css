@@ -1,3 +1,10 @@
+/* Design Tokens - Sistema de Design */
+@import url('design-tokens.css');
+
+/* Accessibility Styles */
+@import url('accessibility.css');
+
+/* Component Styles */
 @import url('about.css');
 @import url('contacts.css');
 @import url('experiences.css');
@@ -6,47 +13,30 @@
 @import url('projects.css');
 @import url('skills.css');
 
-:root {
-    /* Colors */
-    --petroleum-blue: #093d48;
-    --aqua-green: #00A896;
-    --ice-white: #F9FAFB;
-    --light-gray: #E5E7EB;
-    --soft-black: #111827;
-    --dark-gray: #374151;
-    --content-bg: #F3F8F9;
-
-    /* Fonts */
-    --font-primary: "Poppins", sans-serif;
-    --font-secondary: "Inter", sans-serif;
-    --font-mono: "Fira Code", sans-serif;
-
-    /* Font Sizes */
-    --font-large: 4rem;
-    --font-medium: 2rem;
-    --font-small: 1rem;
-    --font-smaller: 0.8rem;
-
-    /* Spacing */
-    --padding-default: 10px 20px;
-    --gap-default: 2rem;
-    --border-radius: 5px;
-
-    /* Widths */
-    --width-half: 50%;
-}
-
+/* ==================== GLOBAL RESET ==================== */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* ==================== HTML & BODY ==================== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--theme-bg-primary);
+    color: var(--theme-text-primary);
+    transition: background-color var(--duration-normal) var(--ease-out),
+                color var(--duration-normal) var(--ease-out);
+}
+
 main {
     display: flex;
-    gap: var(--gap-default);
+    gap: var(--space-2xl);
     padding: 0 15vw;
-    padding-top: 50px;
-    background-color: var(--content-bg);
+    padding-top: var(--space-3xl);
+    background-color: var(--color-background);
 }
 
 main section {
@@ -68,8 +58,41 @@ main section {
 }
 
 h2 {
-    color: var(--petroleum-blue);
-    font-size: var(--font-medium);
-    font-weight: 600;
+    color: var(--color-primary-dark);
+    font-size: var(--text-xl);
+    font-weight: var(--weight-semibold);
     font-family: var(--font-primary);
+    line-height: var(--leading-tight);
+}
+
+/* ==================== ICON STYLES ==================== */
+.icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor;
+}
+
+/* ==================== ACCESSIBILITY MEDIA QUERIES ==================== */
+/* Respect user's motion preferences - WCAG 2.3.3 */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    * {
+        border-width: 2px !important;
+    }
 }

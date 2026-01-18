@@ -4,34 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfolio of Hermino Freitas, a Full Stack Developer showcasing skills, experience, and projects.">
-    <meta name="keywords"
-        content="Hermino Freitas, Full Stack Developer, Portfolio, Web Development, Software Engineer">
+    
+    <!-- Primary Meta Tags -->
+    <title>Hermino Freitas | Full Stack Developer - React, Python, Node.js</title>
+    <meta name="title" content="Hermino Freitas | Full Stack Developer">
+    <meta name="description" content="Full Stack Developer with 5+ years of experience in React, Python, Node.js and PostgreSQL. Specialized in end-to-end development of scalable web applications.">
+    <meta name="keywords" content="Full Stack Developer, React Developer, Python Developer, Node.js, PostgreSQL, Web Development, Software Engineer, Hermino Freitas">
     <meta name="author" content="Hermino Freitas">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hermino.github.io/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hermino.github.io/">
+    <meta property="og:title" content="Hermino Freitas | Full Stack Developer">
+    <meta property="og:description" content="Full Stack Developer with 5+ years of experience. Check out my portfolio with projects in React, Python, Node.js and more.">
+    <meta property="og:image" content="https://hermino.github.io/assets/images/foto.png">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hermino.github.io/">
+    <meta property="twitter:title" content="Hermino Freitas | Full Stack Developer">
+    <meta property="twitter:description" content="Full Stack Developer with 5+ years of experience. Check out my portfolio with projects in React, Python, Node.js and more.">
+    <meta property="twitter:image" content="https://hermino.github.io/assets/images/foto.png">
+    
+    <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     
-    <title>Hermino Freitas</title>
-
+    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        rel="stylesheet">
-
+    
+    <!-- Optimized Google Fonts - Combined in single request -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload Critical CSS -->
+    <link rel="preload" href="assets/styles/design-tokens.css" as="style">
+    <link rel="preload" href="assets/styles/main.css" as="style">
+    
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="assets/styles/main.css">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hermino Barbosa de Freitas Júnior",
+      "alternateName": "Hermino Freitas",
+      "url": "https://hermino.github.io",
+      "image": "https://hermino.github.io/assets/images/foto.png",
+      "sameAs": [
+        "https://www.linkedin.com/in/hermino",
+        "https://github.com/hermino"
+      ],
+      "jobTitle": "Full Stack Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "INDT - Institute for Technological Development"
+      },
+      "knowsAbout": [
+        "Python",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Flask",
+        "FastAPI",
+        "Full Stack Development"
+      ],
+      "email": "herminojunior@gmail.com"
+    }
+    </script>
 </head>
 
 <body>
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="skip-navigation">
+        Skip to main content
+    </a>
+
+    <!-- SVG Icons Sprite -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <use href="assets/icons/icons.svg"></use>
+    </svg>
+
     <header>
         <section class="header-content">
             <div>
@@ -45,14 +104,19 @@
                 that reflect my commitment to high-quality technology and innovation.
             </p>
             <a href="resources/curriculo.pdf" download>
-                <button type="button">Download CV</button>
+                <button type="button">
+                    <svg class="icon" aria-hidden="true">
+                        <use href="assets/icons/icons.svg#icon-download"></use>
+                    </svg>
+                    Download CV
+                </button>
             </a>
         </section>
         <section class="header-image">
-            <!-- <img src="assets/images/foto.png" alt="Profile picture of Hermino Freitas" width="50%"> -->
+            <img src="assets/images/foto.png" alt="Hermino Freitas - Full Stack Developer" loading="eager" width="500" height="500">
         </section>
     </header>
-    <main>
+    <main id="main-content">
         <section>
             <div class="about">
                 <h2>About me</h2>
@@ -81,10 +145,10 @@
             </div>
             <div class="projects">
                 <h2>Projects</h2>
-                <div class="project">
+                <div class="project" data-category="ai web">
                     <h3>Automatic identification of fruits on scales</h3>
                     <div>
-                        <label class="business" for="ITN">ITN</label>
+                        <span class="tech-badge business">ITN</span>
                     </div>
                     <p>
                         I participated in the development of a web application that
@@ -93,18 +157,18 @@
                         recognition and intelligent classification.
                     </p>
                     <div class="technologies">
-                        <label for="Angular">Angular</label>
-                        <label for="Node.js">Node.js</label>
-                        <label for="Material Design">Material Design</label>
-                        <label for="Spring Boot">Spring Boot</label>
-                        <label for="PostgreSQL">PostgreSQL</label>
-                        <label for="Python">Python</label>
+                        <span class="tech-badge">Angular</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Material Design</span>
+                        <span class="tech-badge">Spring Boot</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">Python</span>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project" data-category="web management">
                     <h3>Performance Evaluation System</h3>
                     <div>
-                        <label class="business" for="ITN">ITN</label>
+                        <span class="tech-badge business">ITN</span>
                     </div>
                     <p>
                         I contributed to the development of a web application designed to
@@ -112,18 +176,18 @@
                         efficiency, transparency, and decision-making in HR processes.
                     </p>
                     <div class="technologies">
-                        <label for="Angular">Angular</label>
-                        <label for="Node.js">Node.js</label>
-                        <label for="Material Design">Material Design</label>
-                        <label for="C#">C#</label>
-                        <label for="ASP.NET">ASP.NET</label>
-                        <label for="SQLServe">SQLServe</label>
+                        <span class="tech-badge">Angular</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Material Design</span>
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">ASP.NET</span>
+                        <span class="tech-badge">SQLServe</span>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project" data-category="web management">
                     <h3>Service Order Management System</h3>
                     <div>
-                        <label class="business" for="ITN">ITN</label>
+                        <span class="tech-badge business">ITN</span>
                     </div>
                     <p>
                         I participated in the development of a system for managing
@@ -132,18 +196,18 @@
                         production and maintenance workflows.
                     </p>
                     <div class="technologies">
-                        <label for="Angular">Angular</label>
-                        <label for="Node.js">Node.js</label>
-                        <label for="Material Design">Material Design</label>
-                        <label for="C#">C#</label>
-                        <label for="ASP.NET">ASP.NET</label>
-                        <label for="SQLServe">SQLServe</label>
+                        <span class="tech-badge">Angular</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Material Design</span>
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">ASP.NET</span>
+                        <span class="tech-badge">SQLServe</span>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project" data-category="web management">
                     <h3>System Based on Responsible Business Alliance (RBA) Patterns</h3>
                     <div>
-                        <label class="business" for="ITN">ITN</label>
+                        <span class="tech-badge business">ITN</span>
                     </div>
                     <p>
                         The Responsible Business Alliance (RBA) is a code of conduct that
@@ -153,18 +217,18 @@
                         a supplier complies with specific ethical and operational standards.
                     </p>
                     <div class="technologies">
-                        <label for="Angular">Angular</label>
-                        <label for="Node.js">Node.js</label>
-                        <label for="Material Design">Material Design</label>
-                        <label for="C#">C#</label>
-                        <label for="ASP.NET">ASP.NET</label>
-                        <label for="SQLServe">SQLServe</label>
+                        <span class="tech-badge">Angular</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Material Design</span>
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">ASP.NET</span>
+                        <span class="tech-badge">SQLServe</span>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project" data-category="ai web">
                     <h3>Automatic license plate identification</h3>
                     <div>
-                        <label class="business" for="ITN">ITN</label>
+                        <span class="tech-badge business">ITN</span>
                     </div>
                     <p>
                         I was involved in developing a web application that offers
@@ -173,12 +237,12 @@
                         vehicle tracking systems.
                     </p>
                     <div class="technologies">
-                        <label for="Angular">Angular</label>
-                        <label for="Node.js">Node.js</label>
-                        <label for="Material Design">Material Design</label>
-                        <label for="Spring Boot">Spring Boot</label>
-                        <label for="PostgreSQL">PostgreSQL</label>
-                        <label for="Python">Python</label>
+                        <span class="tech-badge">Angular</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Material Design</span>
+                        <span class="tech-badge">Spring Boot</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">Python</span>
                     </div>
                 </div>
             </div>
@@ -218,15 +282,15 @@
                         </div>
                     </div>
                     <div class="technologies">
-                        <label for="Python">Python</label>
-                        <label for="Typescript">Typescript</label>
-                        <label for="Javascript">Javascript</label>
-                        <label for="SQL">SQL</label>
-                        <label for="Flask">Flask</label>
-                        <label for="FastAPI">FastAPI</label>
-                        <label for="React">React</label>
-                        <label for="Node.js">Node.js</label>
-                        <label for="PostgreSQL">PostgreSQL</label>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Typescript</span>
+                        <span class="tech-badge">Javascript</span>
+                        <span class="tech-badge">SQL</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">FastAPI</span>
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">PostgreSQL</span>
                     </div>
                 </div>
                 <div class="experience">
@@ -259,18 +323,18 @@
                         </div>
                     </div>
                     <div class="technologies">
-                        <label for="Java">Java</label>
-                        <label for="C#">C#</label>
-                        <label for="Typescript">Typescript</label>
-                        <label for="Javascript">Javascript</label>
-                        <label for="SQL">SQL</label>
-                        <label for="Spring Boot">Spring Boot</label>
-                        <label for="ASP.NET">ASP.NET</label>
-                        <label for="Angular">Angular</label>
-                        <label for="Node.js">Node.js</label>
-                        <label for="Docker">Docker</label>
-                        <label for="PostgreSQL">PostgreSQL</label>
-                        <label for="SQLServer">SQLServer</label>
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">Typescript</span>
+                        <span class="tech-badge">Javascript</span>
+                        <span class="tech-badge">SQL</span>
+                        <span class="tech-badge">Spring Boot</span>
+                        <span class="tech-badge">ASP.NET</span>
+                        <span class="tech-badge">Angular</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">SQLServer</span>
                     </div>
                 </div>
             </div>
@@ -279,34 +343,34 @@
                 <div class="skill">
                     <h3>Soft skills</h3>
                     <div>
-                        <label for="collaboration-&-teamwork">Collaboration &amp; teamwork</label>
-                        <label for="research-&-analysis">Research &amp; analysis</label>
-                        <label for="problem-solving">Critical Thinking &amp; Problem Solving</label>
-                        <label for="adaptability">Adaptability</label>
-                        <label for="time-management-&-organization">Time Management &amp; Organization</label>
-                        <label for="proactivity">Proactivity</label>
-                        <label for="continuous-learning">Continuous Learning</label>
+                        <span class="tech-badge">Collaboration &amp; teamwork</span>
+                        <span class="tech-badge">Research &amp; analysis</span>
+                        <span class="tech-badge">Critical Thinking &amp; Problem Solving</span>
+                        <span class="tech-badge">Adaptability</span>
+                        <span class="tech-badge">Time Management &amp; Organization</span>
+                        <span class="tech-badge">Proactivity</span>
+                        <span class="tech-badge">Continuous Learning</span>
                     </div>
                 </div>
                 <div class="skill">
                     <h3>Hard skills</h3>
                     <div>
-                        <label for="end-to-end-web-developer">End-to-End web developer</label>
-                        <label for="python">Python</label>
-                        <label for="typescript">Typescript</label>
-                        <label for="c-sharp">C#</label>
-                        <label for="java">Java</label>
-                        <label for="javascript">Javascript</label>
-                        <label for="sql">SQL</label>
-                        <label for="flask">Flask</label>
-                        <label for="fastapi">FastAPI</label>
-                        <label for="react">React</label>
-                        <label for="angular">Angular</label>
-                        <label for="dotnet">.NET</label>
-                        <label for="spring-boot">Spring Boot</label>
-                        <label for="sqlite">SQLite</label>
-                        <label for="postgresql">PostgreSQL</label>
-                        <label for="mysql">MySQL</label>
+                        <span class="tech-badge">End-to-End web developer</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Typescript</span>
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Javascript</span>
+                        <span class="tech-badge">SQL</span>
+                        <span class="tech-badge">Flask</span>
+                        <span class="tech-badge">FastAPI</span>
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Angular</span>
+                        <span class="tech-badge">.NET</span>
+                        <span class="tech-badge">Spring Boot</span>
+                        <span class="tech-badge">SQLite</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">MySQL</span>
                     </div>
                 </div>
             </div>
@@ -314,18 +378,27 @@
                 <h2>Contacts</h2>
                 <ul>
                     <li>
-                      <i class="fas fa-envelope"></i>
-                      <a href="mailto:herminojunior@gmail.com">herminojunior@gmail.com</a>
+                        <svg class="icon" aria-hidden="true">
+                            <use href="assets/icons/icons.svg#icon-envelope"></use>
+                        </svg>
+                        <span class="sr-only">Email:</span>
+                        <a href="mailto:herminojunior@gmail.com">herminojunior@gmail.com</a>
                     </li>
                     <li>
-                      <i class="fab fa-linkedin"></i>
-                      <a href="https://www.linkedin.com/in/hermino" target="_blank">LinkedIn</a>
+                        <svg class="icon" aria-hidden="true">
+                            <use href="assets/icons/icons.svg#icon-linkedin"></use>
+                        </svg>
+                        <span class="sr-only">LinkedIn:</span>
+                        <a href="https://www.linkedin.com/in/hermino" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </li>
                     <li>
-                      <i class="fab fa-github"></i>
-                      <a href="https://github.com/hermino" target="_blank">GitHub</a>
+                        <svg class="icon" aria-hidden="true">
+                            <use href="assets/icons/icons.svg#icon-github"></use>
+                        </svg>
+                        <span class="sr-only">GitHub:</span>
+                        <a href="https://github.com/hermino" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </li>
-                  </ul>
+                </ul>
             </div>
         </section>
     </main>

@@ -46,6 +46,7 @@
     
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/theme-toggle.css">
     
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -86,6 +87,16 @@
         Skip to main content
     </a>
 
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark theme">
+        <svg class="icon sun-icon" aria-hidden="true">
+            <use href="assets/icons/icons.svg#icon-sun"></use>
+        </svg>
+        <svg class="icon moon-icon" aria-hidden="true">
+            <use href="assets/icons/icons.svg#icon-moon"></use>
+        </svg>
+    </button>
+
     <!-- SVG Icons Sprite -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <use href="assets/icons/icons.svg"></use>
@@ -113,7 +124,10 @@
             </a>
         </section>
         <section class="header-image">
-            <img src="assets/images/foto.png" alt="Hermino Freitas - Full Stack Developer" loading="eager" width="500" height="500">
+            <div class="profile-image-wrapper">
+                <img src="assets/images/foto.png" alt="Hermino Freitas - Full Stack Developer" loading="eager" width="400" height="400">
+                <div class="profile-decoration"></div>
+            </div>
         </section>
     </header>
     <main id="main-content">
@@ -405,6 +419,9 @@
     <footer>
         <p>&copy; 2025 Hermino Barbosa de Freitas Júnior</p>
     </footer>
+    
+    <!-- Theme Script -->
+    <script src="assets/scripts/theme.js"></script>
 </body>
 
 </html>

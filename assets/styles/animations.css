@@ -1,0 +1,201 @@
+/* ============================================
+   ANIMATIONS - Scroll-triggered and Transitions
+   ============================================ */
+
+/* Base state for scroll-triggered elements */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity var(--duration-normal) var(--ease-out),
+                transform var(--duration-normal) var(--ease-out);
+}
+
+/* Animated state when element enters viewport */
+.animate-on-scroll.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger animation for projects */
+.projects .project:nth-child(1) { 
+    transition-delay: 0ms; 
+}
+
+.projects .project:nth-child(2) { 
+    transition-delay: 100ms; 
+}
+
+.projects .project:nth-child(3) { 
+    transition-delay: 200ms; 
+}
+
+.projects .project:nth-child(4) { 
+    transition-delay: 300ms; 
+}
+
+.projects .project:nth-child(5) { 
+    transition-delay: 400ms; 
+}
+
+.projects .project:nth-child(6) { 
+    transition-delay: 500ms; 
+}
+
+/* Stagger animation for experiences */
+.experiences .experience:nth-child(1) { 
+    transition-delay: 0ms; 
+}
+
+.experiences .experience:nth-child(2) { 
+    transition-delay: 150ms; 
+}
+
+.experiences .experience:nth-child(3) { 
+    transition-delay: 300ms; 
+}
+
+/* Stagger animation for timeline items */
+.timeline .timeline-item:nth-child(1) { 
+    transition-delay: 0ms; 
+}
+
+.timeline .timeline-item:nth-child(2) { 
+    transition-delay: 80ms; 
+}
+
+.timeline .timeline-item:nth-child(3) { 
+    transition-delay: 160ms; 
+}
+
+.timeline .timeline-item:nth-child(4) { 
+    transition-delay: 240ms; 
+}
+
+/* Stagger animation for skills */
+.skills .skill:nth-child(1) { 
+    transition-delay: 0ms; 
+}
+
+.skills .skill:nth-child(2) { 
+    transition-delay: 150ms; 
+}
+
+/* Fade in animation variant */
+.fade-in {
+    opacity: 0;
+    transition: opacity var(--duration-normal) var(--ease-out);
+}
+
+.fade-in.animate-in {
+    opacity: 1;
+}
+
+/* Slide in from left */
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity var(--duration-normal) var(--ease-out),
+                transform var(--duration-normal) var(--ease-out);
+}
+
+.slide-in-left.animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Slide in from right */
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity var(--duration-normal) var(--ease-out),
+                transform var(--duration-normal) var(--ease-out);
+}
+
+.slide-in-right.animate-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Scale in animation */
+.scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity var(--duration-normal) var(--ease-out),
+                transform var(--duration-normal) var(--ease-out);
+}
+
+.scale-in.animate-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .animate-on-scroll,
+    .fade-in,
+    .slide-in-left,
+    .slide-in-right,
+    .scale-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    
+    .projects .project,
+    .experiences .experience,
+    .timeline .timeline-item,
+    .skills .skill {
+        transition-delay: 0ms !important;
+    }
+}
+
+/* Header animations (initial load) */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header .header-content > * {
+    animation: fadeInUp var(--duration-slow) var(--ease-out) backwards;
+}
+
+header .header-content > *:nth-child(1) {
+    animation-delay: 100ms;
+}
+
+header .header-content > *:nth-child(2) {
+    animation-delay: 200ms;
+}
+
+header .header-content > *:nth-child(3) {
+    animation-delay: 300ms;
+}
+
+header .header-image {
+    animation: fadeInUp var(--duration-slow) var(--ease-out) 400ms backwards;
+}
+
+/* Disable initial animations if reduced motion is preferred */
+@media (prefers-reduced-motion: reduce) {
+    header .header-content > *,
+    header .header-image {
+        animation: none;
+    }
+}

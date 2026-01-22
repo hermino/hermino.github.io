@@ -39,8 +39,8 @@
     --theme-bg-secondary: #F9FAFB;
     --theme-bg-elevated: #FFFFFF;
     --theme-text-primary: #111827;
-    --theme-text-secondary: #374151;
-    --theme-text-tertiary: #6B7280;
+    --theme-text-secondary: #1F2937;
+    --theme-text-tertiary: #374151;
     --theme-border: rgba(0, 0, 0, 0.08);
     --theme-shadow: rgba(0, 0, 0, 0.06);
 
@@ -51,6 +51,7 @@
     --color-text-secondary: var(--theme-text-secondary);
     --color-text-tertiary: var(--theme-text-tertiary);
     --color-accent: var(--color-primary);
+    --color-heading: var(--color-primary-dark);
 
     /* ==================== FOCUS & ACCESSIBILITY ==================== */
     /* Focus Ring - WCAG 2.4.7 compliant */
@@ -160,6 +161,10 @@
     --color-text-primary: var(--theme-text-primary);
     --color-text-secondary: var(--theme-text-secondary);
     --color-text-tertiary: var(--theme-text-tertiary);
+    --color-heading: var(--color-text-primary);
+
+    /* Adjust neutral colors for better contrast in dark theme */
+    --color-neutral-200: #475569;
 
     /* Adjust elevations for dark theme */
     --elevation-1: 0 1px 3px rgba(0, 0, 0, 0.3),

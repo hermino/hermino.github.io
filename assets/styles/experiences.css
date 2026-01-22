@@ -29,7 +29,7 @@
 .experiences .experience .experience-info div h3 {
     font-size: var(--text-lg);
     font-weight: var(--weight-semibold);
-    color: var(--color-primary-dark);
+    color: var(--color-heading);
     line-height: var(--leading-tight);
 }
 

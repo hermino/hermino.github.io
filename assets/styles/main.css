@@ -65,6 +65,11 @@ h2 {
     line-height: var(--leading-tight);
 }
 
+/* Dark theme adjustments for headings */
+[data-theme="dark"] h2 {
+    color: var(--theme-text-primary);
+}
+
 /* ==================== ICON STYLES ==================== */
 .icon {
     width: 1em;

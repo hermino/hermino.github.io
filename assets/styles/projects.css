@@ -21,7 +21,7 @@
 }
 
 .projects .project h3 {
-    color: var(--color-primary-dark);
+    color: var(--color-heading);
     font-size: var(--text-lg);
     font-weight: var(--weight-semibold);
     font-family: var(--font-primary);

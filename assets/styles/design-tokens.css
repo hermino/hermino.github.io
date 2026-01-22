@@ -16,33 +16,37 @@
     --space-3xl: 64px;   /* 8 unidades */
 
     /* ==================== COLORS ==================== */
-    /* Primary Palette */
-    --color-primary-dark: #093d48;      /* petroleum-blue */
-    --color-primary: #00A896;           /* aqua-green */
-    --color-primary-light: #33BFB3;     /* lighter aqua */
+    /* Primary Palette - Bold & Technical */
+    --color-accent-hot: #FF3366;        /* hot pink accent */
+    --color-accent-warm: #FF6B35;       /* orange */
+    --color-accent-cool: #00D9FF;       /* electric cyan */
+    --color-primary-dark: #0A0E27;      /* deep navy */
+    --color-primary: #1A1F3A;           /* midnight blue */
+    --color-primary-light: #2D3561;     /* lighter navy */
 
-    /* Neutrals */
-    --color-neutral-50: #F9FAFB;        /* ice-white */
-    --color-neutral-100: #F3F4F6;       /* lighter gray */
-    --color-neutral-200: #E5E7EB;       /* light-gray */
-    --color-neutral-300: #D1D5DB;
-    --color-neutral-400: #9CA3AF;
-    --color-neutral-500: #6B7280;
-    --color-neutral-600: #4B5563;
-    --color-neutral-700: #374151;       /* dark-gray */
-    --color-neutral-800: #1F2937;
-    --color-neutral-900: #111827;       /* soft-black */
+    /* Neutrals - High Contrast */
+    --color-neutral-50: #FAFBFC;
+    --color-neutral-100: #E8ECF1;
+    --color-neutral-200: #D1D9E6;
+    --color-neutral-300: #A8B4C8;
+    --color-neutral-400: #8894AA;
+    --color-neutral-500: #5D6B82;
+    --color-neutral-600: #3E4A5C;
+    --color-neutral-700: #252D3D;
+    --color-neutral-800: #141820;
+    --color-neutral-900: #0A0D14;
 
     /* ==================== THEME SYSTEM ==================== */
-    /* Light Theme (default) */
-    --theme-bg-primary: #F3F8F9;
-    --theme-bg-secondary: #F9FAFB;
+    /* Light Theme (default) - Atmospheric */
+    --theme-bg-primary: #FAFBFC;
+    --theme-bg-secondary: #F4F6F9;
     --theme-bg-elevated: #FFFFFF;
-    --theme-text-primary: #111827;
-    --theme-text-secondary: #1F2937;
-    --theme-text-tertiary: #374151;
-    --theme-border: rgba(0, 0, 0, 0.08);
-    --theme-shadow: rgba(0, 0, 0, 0.06);
+    --theme-bg-pattern: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    --theme-text-primary: #0A0D14;
+    --theme-text-secondary: #3E4A5C;
+    --theme-text-tertiary: #5D6B82;
+    --theme-border: rgba(10, 13, 20, 0.12);
+    --theme-shadow: rgba(10, 13, 20, 0.08);
 
     /* Semantic Colors */
     --color-background: var(--theme-bg-primary);
@@ -71,19 +75,21 @@
     --content-bg: var(--color-background);
 
     /* ==================== TYPOGRAPHY ==================== */
-    /* Font Families */
-    --font-primary: "Poppins", sans-serif;
-    --font-secondary: "Inter", sans-serif;
-    --font-mono: "Fira Code", monospace;
+    /* Font Families - Terminal Modernism aesthetic */
+    --font-display: "JetBrains Mono", "Courier New", monospace;
+    --font-primary: "JetBrains Mono", monospace;
+    --font-secondary: system-ui, -apple-system, sans-serif;
+    --font-mono: "JetBrains Mono", "Fira Code", monospace;
 
-    /* Font Sizes - Type scale modular (1.25 ratio) */
-    --text-xs: 0.75rem;      /* 12px - tags pequenas */
-    --text-sm: 0.875rem;     /* 14px - labels, meta */
-    --text-base: 1rem;       /* 16px - body */
-    --text-lg: 1.25rem;      /* 20px - subtítulos */
-    --text-xl: 1.5rem;       /* 24px - títulos de seção */
-    --text-2xl: 2rem;        /* 32px - subtítulo header */
-    --text-3xl: 3rem;        /* 48px - título principal */
+    /* Font Sizes - Dramatic type scale (1.333 ratio) */
+    --text-xs: 0.75rem;      /* 12px */
+    --text-sm: 0.875rem;     /* 14px */
+    --text-base: 1rem;       /* 16px */
+    --text-lg: 1.333rem;     /* 21px */
+    --text-xl: 1.777rem;     /* 28px */
+    --text-2xl: 2.369rem;    /* 38px */
+    --text-3xl: 3.157rem;    /* 50px */
+    --text-4xl: 4.209rem;    /* 67px */
 
     /* Font Weights */
     --weight-light: 300;
@@ -107,12 +113,19 @@
     --elevation-0: none;
 
     /* Level 1 - Subtle lift (cards, dropdowns) */
-    --elevation-1: 0 1px 3px rgba(0, 0, 0, 0.06), 
-                   0 1px 2px rgba(0, 0, 0, 0.04);
+    --elevation-1: 0 2px 8px rgba(10, 13, 20, 0.08),
+                   0 1px 4px rgba(10, 13, 20, 0.06),
+                   inset 0 0 0 1px rgba(10, 13, 20, 0.04);
 
-    /* Level 2 - Hover state */
-    --elevation-2: 0 4px 6px rgba(0, 0, 0, 0.07), 
-                   0 2px 4px rgba(0, 0, 0, 0.05);
+    /* Level 2 - Hover state - Dramatic */
+    --elevation-2: 0 8px 24px rgba(10, 13, 20, 0.12),
+                   0 4px 12px rgba(10, 13, 20, 0.08),
+                   inset 0 0 0 1px rgba(10, 13, 20, 0.04);
+
+    /* Level 3 - Dramatic emphasis */
+    --elevation-3: 0 16px 48px rgba(255, 51, 102, 0.15),
+                   0 8px 24px rgba(10, 13, 20, 0.1),
+                   inset 0 0 0 2px var(--color-accent-hot);
 
     /* Borders */
     --border-subtle: 1px solid rgba(0, 0, 0, 0.08);
@@ -145,15 +158,16 @@
 
 /* ==================== DARK THEME ==================== */
 [data-theme="dark"] {
-    /* Dark Theme Colors */
-    --theme-bg-primary: #0f172a;
-    --theme-bg-secondary: #1e293b;
-    --theme-bg-elevated: #334155;
-    --theme-text-primary: #f1f5f9;
-    --theme-text-secondary: #cbd5e1;
-    --theme-text-tertiary: #94a3b8;
-    --theme-border: rgba(255, 255, 255, 0.1);
-    --theme-shadow: rgba(0, 0, 0, 0.3);
+    /* Dark Theme Colors - Terminal Aesthetic */
+    --theme-bg-primary: #0A0D14;
+    --theme-bg-secondary: #141820;
+    --theme-bg-elevated: #1A1F3A;
+    --theme-bg-pattern: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    --theme-text-primary: #FAFBFC;
+    --theme-text-secondary: #D1D9E6;
+    --theme-text-tertiary: #8894AA;
+    --theme-border: rgba(250, 251, 252, 0.08);
+    --theme-shadow: rgba(0, 0, 0, 0.5);
 
     /* Update semantic colors for dark theme */
     --color-background: var(--theme-bg-primary);

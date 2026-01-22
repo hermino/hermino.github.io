@@ -19,7 +19,7 @@
     <meta property="og:url" content="https://hermino.github.io/">
     <meta property="og:title" content="Hermino Freitas | Full Stack Developer">
     <meta property="og:description" content="Full Stack Developer with 5+ years of experience. Check out my portfolio with projects in React, Python, Node.js and more.">
-    <meta property="og:image" content="https://hermino.github.io/assets/images/foto.png">
+    <meta property="og:image" content="https://hermino.github.io/assets/images/favicon.png">
     <meta property="og:image:width" content="500">
     <meta property="og:image:height" content="500">
     
@@ -28,17 +28,20 @@
     <meta property="twitter:url" content="https://hermino.github.io/">
     <meta property="twitter:title" content="Hermino Freitas | Full Stack Developer">
     <meta property="twitter:description" content="Full Stack Developer with 5+ years of experience. Check out my portfolio with projects in React, Python, Node.js and more.">
-    <meta property="twitter:image" content="https://hermino.github.io/assets/images/foto.png">
+    <meta property="twitter:image" content="https://hermino.github.io/assets/images/favicon.png">
     
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon-180x180.png">
     
     <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Optimized Google Fonts - Combined in single request -->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Distinctive Typography - JetBrains Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     
     <!-- Preload Critical CSS -->
     <link rel="preload" href="assets/styles/design-tokens.css" as="style">
@@ -47,6 +50,7 @@
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/theme-toggle.css">
+    <link rel="stylesheet" href="assets/styles/animations.css">
     
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -82,10 +86,6 @@
 </head>
 
 <body>
-    <!-- Skip Navigation for Accessibility -->
-    <a href="#main-content" class="skip-navigation">
-        Skip to main content
-    </a>
 
     <!-- Theme Toggle Button -->
     <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark theme">
@@ -423,6 +423,8 @@
     
     <!-- Theme Script -->
     <script src="assets/scripts/theme.js"></script>
+    <!-- Animations Script -->
+    <script src="assets/scripts/animations.js"></script>
 </body>
 
 </html>

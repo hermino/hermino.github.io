@@ -1,0 +1,30 @@
+{
+  "name": "hermino-portfolio",
+  "version": "1.0.0",
+  "description": "Frontend Developer Portfolio - Hermino Freitas",
+  "private": true,
+  "scripts": {
+    "lint:html": "htmlhint \"**/*.html\"",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint": "npm run lint:html && npm run lint:css"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^16.1.0",
+    "stylelint-config-standard": "^36.0.0"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend",
+    "developer",
+    "react",
+    "typescript",
+    "angular"
+  ],
+  "author": "Hermino Freitas <herminojunior@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hermino/hermino.github.io.git"
+  }
+}

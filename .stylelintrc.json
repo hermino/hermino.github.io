@@ -1,7 +1,20 @@
 {
-    "extends": "stylelint-config-standard",
-    "rules": {
-        "media-feature-range-notation": null
-      }
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "declaration-block-single-line-max-declarations": null,
+    "at-rule-empty-line-before": null,
+    "rule-empty-line-before": null,
+    "no-descending-specificity": null,
+    "no-duplicate-selectors": null,
+    "color-function-notation": "legacy",
+    "alpha-value-notation": "number",
+    "value-keyword-case": null,
+    "comment-empty-line-before": null,
+    "color-hex-length": null,
+    "keyframes-name-pattern": null,
+    "media-feature-range-notation": null
+  },
+  "ignoreFiles": [
+    "**/*.min.css"
+  ]
 }
-  
